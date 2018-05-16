@@ -1,14 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Family from './family'
-import Member from './member'
+import ClassComponent from './classComponent'
 
 ReactDOM.render(
   <div>
-    <Family lastName="Silva">
-      <Member name="Leo" />
-      <Member name="João" />
-      <Member name="Maria" />
-    </Family>
+    <ClassComponent label="Contador" initialValue={0} />
   </div>,
   document.getElementById('app'))
